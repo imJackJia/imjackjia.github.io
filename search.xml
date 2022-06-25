@@ -22,7 +22,8 @@
     <title>搭建自己的个人博客网站(Github+Hexo+Next)</title>
     <url>/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/</url>
     <content><![CDATA[<blockquote>
-<p>从大二开始就一直很想有一个属于自己的博客网站，可一拖再拖，直到最近才下了决心去搭建一个网站。在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。</p>
+<p>Hexo博客支持很多主题风格，其中<a href="https://github.com/theme-next/hexo-theme-next">Next</a>主题是<a href="https://so.csdn.net/so/search?q=Github&spm=1001.2101.3001.7020">Github</a>上Star最多的主题，其一直在更新维护，支持非常多的外部插件和功能选项。我目前使用的是Next6.0版本，下面我会介绍基于Next6主题的界面美化手法。</p>
+<p>在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。</p>
 </blockquote>
 <h1 id="第一部分-搭建与发布"><a href="#第一部分-搭建与发布" class="headerlink" title="第一部分 搭建与发布"></a>第一部分 搭建与发布</h1><h2 id="项目环境"><a href="#项目环境" class="headerlink" title="项目环境"></a>项目环境</h2><ul>
 <li>windows10</li>
@@ -62,6 +63,12 @@
 <h1 id="第二部分-Next主题配置美化"><a href="#第二部分-Next主题配置美化" class="headerlink" title="第二部分 Next主题配置美化"></a>第二部分 Next主题配置美化</h1><blockquote>
 <p>在Github开源了许多关于Hexo的博客主题，因为个人比较喜欢简约风格，在进行多番对比后，最终选择Next作为个人博客网站的主题。</p>
 </blockquote>
+<h2 id="主题简单配置"><a href="#主题简单配置" class="headerlink" title="主题简单配置"></a>主题简单配置</h2><p>Next主题提供很多方便的功能，我们来一一介绍：</p>
+<ul>
+<li><p><strong>Next主题风格</strong>：</p>
+<p>Next提供了四中主题风格scheme，可以在主题配置文件blog&#x2F;themes&#x2F;next&#x2F;_config.yml文件中进行选择，分别是Muse、Mist、Pisces、Gemini：</p>
+</li>
+</ul>
 <h2 id="Hexo相关介绍"><a href="#Hexo相关介绍" class="headerlink" title="Hexo相关介绍"></a>Hexo相关介绍</h2><h3 id="1、Hexo目录构成"><a href="#1、Hexo目录构成" class="headerlink" title="1、Hexo目录构成"></a>1、Hexo目录构成</h3><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">node_modules：里面存放Node.<span class="keyword">js各种库的目录</span></span><br><span class="line"><span class="keyword"></span></span><br><span class="line">public：生成网页的文件目录</span><br><span class="line"></span><br><span class="line"><span class="keyword">scaffolds：存放新文章和新页面的初始设置</span></span><br><span class="line"><span class="keyword"></span></span><br><span class="line">source：存放文章，各类页面，图像等文件</span><br><span class="line"></span><br><span class="line">themes：存放着主题文件</span><br><span class="line"></span><br><span class="line">_<span class="built_in">config</span>.yml：站点配置文件</span><br></pre></td></tr></table></figure>
 
 <h3 id="2、更换主题"><a href="#2、更换主题" class="headerlink" title="2、更换主题"></a>2、更换主题</h3><p>Hexo有着自己的开源主题库，我们需要去下载Next主题。</p>
@@ -200,6 +207,20 @@
 <p>在站点配置文件添加：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 为博客添加emoji表情支持</span></span><br><span class="line"><span class="attr">emoji:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">className:</span> <span class="string">github-emoji</span></span><br><span class="line">  <span class="attr">styles:</span> </span><br><span class="line">  <span class="attr">customEmojis:</span> </span><br></pre></td></tr></table></figure>
 
+<h3 id="29、文章资源文件夹"><a href="#29、文章资源文件夹" class="headerlink" title="29、文章资源文件夹"></a>29、文章资源文件夹</h3><p>在写文章的时候我们免不了要在文章里插入图片之类的资源，这时有两种办法：</p>
+<ul>
+<li><p>使用绝对路径引用，资源的路径或者资源的 URL</p>
+</li>
+<li><p>使用相对路径引用</p>
+</li>
+</ul>
+<p>如果是使用相对路径引用资源，那么我们可以使用 Hexo 提供的资源文件夹功能。</p>
+<p>使用文本编辑器打开站点根目录下的 _ config.yml 文件，将 post_asset_folder 值设置为 true。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的操作会开启 Hexo 的文章资源文件管理功能。Hexo 将会在我们每一次通过 hexo new <title> 命令创建新文章时自动创建一个同名文件夹，文件夹与md文件位于同一目录，于是我们便可以将文章所引用的相关资源放到这个同名文件夹下，然后通过相对路径引用。</p>
+<p>比如我们把 1.jpg 放入 Hexo-2 文件夹中，通过markdown语法来进行引用图片<img data-src="/./Hexo-2/1.jpg"></p>
+<p>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。Hexo官方推荐使用标签插件来进行引用，这里之后需要再讲。</p>
 <h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>花了大概3个小时，终于把这篇『搭建自己的个人博客网站』完成。这篇文章是我第一篇真正意义上的博客，首先是用心去写，花了大量时间去思考内容和排版；其次，希望自己能保持写博客的好习惯，从今天起，能保持每个月4篇高质量博客的输出，毕竟好记性不如烂笔头，多去总结多去思考。<br>​</p>
 <p><strong>最后以维克托·雨果的话作为结束：</strong><br><strong>人的智慧掌握着三把钥匙，一把开启数字，一把开启字母，一把开启音符。知识、想象、幻想就在其中。</strong></p>
 ]]></content>
