@@ -38,6 +38,10 @@
 <h3 id="2、安装VSCode"><a href="#2、安装VSCode" class="headerlink" title="2、安装VSCode"></a>2、安装VSCode</h3><pre><code>VSCode 全称 Visual Studio Code，是微软出的一款轻量级代码编辑器，免费、开源而且功能强大，一般为前端代码开发IDE。
 可以到VSCode官网进行下载，VSCode详细安装教程可以查看VSCode安装。
 </code></pre>
+<h3 id="3、安装Node-js"><a href="#3、安装Node-js" class="headerlink" title="3、安装Node.js"></a>3、安装Node.js</h3><pre><code>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。
+可以到Node官网进行下载，Node详细安装教程可以查看Node.js安装。需要注意配置环境变量，便于npm包管理和使用全局组件。
+</code></pre>
+<h3 id="4、安装Hexo"><a href="#4、安装Hexo" class="headerlink" title="4、安装Hexo"></a>4、安装Hexo</h3><p>Hexo是一个快速、简洁且高效的博客框架，让上百个页面在几秒内瞬间完成渲染。<br>安装完Node.js后，就可以使用软件内自带的npm包管理器下载Hexo。<br>在任意文件夹下，右键Git Bash Here，npm install -g hexo-cli安装Hexo，然后使用hexo init hexo-blog初始化一个hexo项目。右键通过Code打开项目，在集成终端打开文件夹，执行hexo server，能够通过localhost:4000访问到项目，hexo就安装成功了。</p>
 ]]></content>
   </entry>
 </search>
