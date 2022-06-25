@@ -157,8 +157,16 @@
 <h3 id="18、网站底部加上访问量"><a href="#18、网站底部加上访问量" class="headerlink" title="18、网站底部加上访问量"></a>18、网站底部加上访问量</h3><p>修改主题下layout&#x2F;_partials&#x2F;footer.swig，在{ {- next_inject(‘footer’) } }上方添加如下内容：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;span&gt;&lt;br&gt;&lt;/span&gt;	</span><br><span class="line"></span><br><span class="line">&lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">      &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/span&gt;</span><br><span class="line">&lt;span&gt;总访客&amp;nbsp&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;&amp;nbsp人&lt;/span&gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">      &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;总访问量&amp;nbsp&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;&amp;nbsp次&lt;/span&gt;</span><br></pre></td></tr></table></figure>
 
+<p>测试结果：未配置</p>
 <h3 id="19、顶部阅读进度条"><a href="#19、顶部阅读进度条" class="headerlink" title="19、顶部阅读进度条"></a>19、顶部阅读进度条</h3><p>主题配置文件中修改 reading_progress 选项</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">reading_progress:</span><br><span class="line">  enable: true</span><br><span class="line">  # 显示在顶部</span><br><span class="line">  position: top</span><br><span class="line">  color: &quot;#06d633&quot;</span><br><span class="line">  height: 3px</span><br></pre></td></tr></table></figure>
+
+<h3 id="20、设置网站图标"><a href="#20、设置网站图标" class="headerlink" title="20、设置网站图标"></a>20、设置网站图标</h3><p>在主题配置文件中修改favicon</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 填写自己的图片</span><br><span class="line">favicon:</span><br><span class="line">  small: /images/favicon.png</span><br><span class="line">  medium: /images/favicon.png</span><br><span class="line">  apple_touch_icon: /images/favicon.png</span><br><span class="line">  safari_pinned_tab: /images/favicon.png</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;images&#x2F;favicon.png指的是根目录下public&#x2F;images&#x2F;下的图片</p>
+<h3 id="21、侧边栏社交链接"><a href="#21、侧边栏社交链接" class="headerlink" title="21、侧边栏社交链接"></a>21、侧边栏社交链接</h3><p>修改主题配置文件中socail选项：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/yuumiy || fab fa-github</span><br><span class="line">  E-Mail: mailto:115274737@qq.com || fa fa-envelope</span><br><span class="line">  CSDN: https://blog.csdn.net/qq_44752641 || fab fa-telegram</span><br><span class="line">  RSS: /atom.xml || fas fa-rss</span><br></pre></td></tr></table></figure>
 
 ]]></content>
   </entry>
