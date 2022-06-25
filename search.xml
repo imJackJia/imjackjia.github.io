@@ -275,7 +275,7 @@
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo <span class="keyword">generate</span></span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>打开 <a href="http://localhost:4000/">http://localhost:4000</a> 查看效果</p>
-<img data-src="post_article.png" alt="post_article" style="zoom:55%;">
+<img data-src="/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/post_article.png" class title="post_article">
 
 
 
