@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/posts/16107.html</url>
+    <url>/2022/06/24/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -20,7 +20,7 @@
   </entry>
   <entry>
     <title>搭建自己的个人博客网站(Github+Hexo+Next)</title>
-    <url>/posts/10121.html</url>
+    <url>/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/</url>
     <content><![CDATA[<blockquote>
 <p>从大二开始就一直很想有一个属于自己的博客网站，可一拖再拖，直到最近才下了决心去搭建一个网站。在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。</p>
 </blockquote>
