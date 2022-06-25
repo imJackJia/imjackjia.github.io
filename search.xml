@@ -219,7 +219,7 @@
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
 <p>上面的操作会开启 Hexo 的文章资源文件管理功能。Hexo 将会在我们每一次通过 hexo new <title> 命令创建新文章时自动创建一个同名文件夹，文件夹与md文件位于同一目录，于是我们便可以将文章所引用的相关资源放到这个同名文件夹下，然后通过相对路径引用。</p>
-<p>比如我们把 1.jpg 放入 Hexo-2 文件夹中，通过markdown语法来进行引用图片<img data-src="/./Hexo-2/1.jpg"></p>
+<p>比如我们把 1.jpg 放入 Hexo-2 文件夹中，通过markdown语法来进行引用图片<code>![](./Hexo-2/1.jpg)</code></p>
 <p>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。Hexo官方推荐使用标签插件来进行引用，这里之后需要再讲。</p>
 <h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>花了大概3个小时，终于把这篇『搭建自己的个人博客网站』完成。这篇文章是我第一篇真正意义上的博客，首先是用心去写，花了大量时间去思考内容和排版；其次，希望自己能保持写博客的好习惯，从今天起，能保持每个月4篇高质量博客的输出，毕竟好记性不如烂笔头，多去总结多去思考。<br>​</p>
 <p><strong>最后以维克托·雨果的话作为结束：</strong><br><strong>人的智慧掌握着三把钥匙，一把开启数字，一把开启字母，一把开启音符。知识、想象、幻想就在其中。</strong></p>
