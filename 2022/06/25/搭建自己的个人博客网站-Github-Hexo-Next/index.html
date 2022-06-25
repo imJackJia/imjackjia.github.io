@@ -22,30 +22,31 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"imjackjia.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="Hexo博客支持很多主题风格，其中Next主题是Github上Star最多的主题，其一直在更新维护，支持非常多的外部插件和功能选项。我目前使用的是Next6.0版本，下面我会介绍基于Next6主题的界面美化手法。 在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。  第一部分 搭建与发布">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="搭建自己的个人博客网站(Github+Hexo+Next)">
-<meta property="og:url" content="https://imjackjia.github.io/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next.html">
+<meta property="og:url" content="https://imjackjia.github.io/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/index.html">
 <meta property="og:site_name" content="ImJackJia">
 <meta property="og:description" content="Hexo博客支持很多主题风格，其中Next主题是Github上Star最多的主题，其一直在更新维护，支持非常多的外部插件和功能选项。我目前使用的是Next6.0版本，下面我会介绍基于Next6主题的界面美化手法。 在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。  第一部分 搭建与发布">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://imjackjia.github.io/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/搭建自己的个人博客网站-Github-Hexo-Next/post_article.png">
 <meta property="article:published_time" content="2022-06-25T03:37:50.000Z">
-<meta property="article:modified_time" content="2022-06-25T05:12:40.000Z">
+<meta property="article:modified_time" content="2022-06-25T05:25:06.000Z">
 <meta property="article:author" content="Jack Jia">
 <meta property="article:tag" content="博客">
 <meta property="article:tag" content="Github">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://imjackjia.github.io/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/搭建自己的个人博客网站-Github-Hexo-Next/post_article.png">
 
 
-<link rel="canonical" href="https://imjackjia.github.io/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next">
+<link rel="canonical" href="https://imjackjia.github.io/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://imjackjia.github.io/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next.html","path":"搭建自己的个人博客网站-Github-Hexo-Next.html","title":"搭建自己的个人博客网站(Github+Hexo+Next)"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://imjackjia.github.io/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/","path":"2022/06/25/搭建自己的个人博客网站-Github-Hexo-Next/","title":"搭建自己的个人博客网站(Github+Hexo+Next)"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>搭建自己的个人博客网站(Github+Hexo+Next) | ImJackJia
-</title>
+<title>搭建自己的个人博客网站(Github+Hexo+Next) | ImJackJia</title>
   
 
 
@@ -149,7 +150,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83"><span class="nav-number">1.</span> <span class="nav-text">第一部分 搭建与发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83"><span class="nav-number">1.1.</span> <span class="nav-text">项目环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo搭建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%AE%89%E8%A3%85Git"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%AE%89%E8%A3%85VSCode"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、安装VSCode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">1.2.4.</span> <span class="nav-text">4、安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E6%B3%A8%E5%86%8CGithub%E8%B4%A6%E5%8F%B7%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93"><span class="nav-number">1.2.5.</span> <span class="nav-text">5、注册Github账号创建个人仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E7%94%9F%E6%88%90ssh%E5%AF%86%E9%92%A5%E6%B7%BB%E5%8A%A0%E5%88%B0Github"><span class="nav-number">1.2.6.</span> <span class="nav-text">6、生成ssh密钥添加到Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E3%80%81%E4%BF%AE%E6%94%B9Hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.7.</span> <span class="nav-text">7、修改Hexo配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8%E3%80%81Hexo%E9%A1%B9%E7%9B%AE%E6%98%A0%E5%B0%84%E5%88%B0Github%E4%BB%93%E5%BA%93"><span class="nav-number">1.2.8.</span> <span class="nav-text">8、Hexo项目映射到Github仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9%E3%80%81Markdown%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.9.</span> <span class="nav-text">9、Markdown学习与工具</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E7%BE%8E%E5%8C%96"><span class="nav-number">2.</span> <span class="nav-text">第二部分 Next主题配置美化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE"><span class="nav-number">2.1.</span> <span class="nav-text">主题简单配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo相关介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81Hexo%E7%9B%AE%E5%BD%95%E6%9E%84%E6%88%90"><span class="nav-number">2.2.1.</span> <span class="nav-text">1、Hexo目录构成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">2.2.2.</span> <span class="nav-text">2、更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81Next%E7%9B%AE%E5%BD%95%E6%9E%84%E6%88%90"><span class="nav-number">2.2.3.</span> <span class="nav-text">3、Next目录构成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E7%BE%8E%E5%8C%96"><span class="nav-number">2.3.</span> <span class="nav-text">主题配置美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E8%AE%BE%E7%BD%AE%E5%8D%9A%E4%B8%BB%E6%96%87%E5%AD%97%E6%8F%8F%E8%BF%B0%E5%92%8C%E4%B8%AD%E6%96%87%E8%AF%AD%E8%A8%80"><span class="nav-number">2.3.1.</span> <span class="nav-text">1、设置博主文字描述和中文语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E8%AE%BE%E7%BD%AENext%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F"><span class="nav-number">2.3.2.</span> <span class="nav-text">2、设置Next主题样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E9%93%BE%E6%8E%A5"><span class="nav-number">2.3.3.</span> <span class="nav-text">3、设置博客文章持久化链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81Menu%E6%B7%BB%E5%8A%A0%E5%85%B3%E4%BA%8E%E3%80%81%E6%A0%87%E7%AD%BE%E3%80%81%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2"><span class="nav-number">2.3.4.</span> <span class="nav-text">4、Menu添加关于、标签、分类页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">2.3.5.</span> <span class="nav-text">5、添加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E5%AF%B9%E4%BA%8E%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89"><span class="nav-number">2.3.6.</span> <span class="nav-text">6、对于网站样式的自定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E3%80%81%E8%AE%BE%E7%BD%AE%E4%BE%A7%E6%A0%8F%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6%E7%99%BE%E5%88%86%E6%AF%94"><span class="nav-number">2.3.7.</span> <span class="nav-text">7、设置侧栏阅读进度百分比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8%E3%80%81%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%A2%84%E8%AE%A1%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4"><span class="nav-number">2.3.8.</span> <span class="nav-text">8、设置字数统计和预计阅读时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9%E3%80%81%E7%BD%91%E7%AB%99%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4"><span class="nav-number">2.3.9.</span> <span class="nav-text">9、网站底部添加网站运行时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10%E3%80%81%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2"><span class="nav-number">2.3.10.</span> <span class="nav-text">10、添加自定义404页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11%E3%80%81%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD"><span class="nav-number">2.3.11.</span> <span class="nav-text">11、添加图片放大预览功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12%E3%80%81%E9%9A%90%E8%97%8F%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8-powered-By-Hexo-x2F-%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8"><span class="nav-number">2.3.12.</span> <span class="nav-text">12、隐藏网页底部 powered By Hexo &#x2F; 强力驱动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13%E3%80%81%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%81%E6%A1%83%E5%BF%83"><span class="nav-number">2.3.13.</span> <span class="nav-text">13、网页底部添加动态桃心</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14%E3%80%81%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.3.14.</span> <span class="nav-text">14、图片懒加载设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15%E3%80%81%E8%AE%BE%E7%BD%AE%E6%A0%87%E9%A2%98%E6%A0%8F%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">2.3.15.</span> <span class="nav-text">15、设置标题栏背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16%E3%80%81%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8tag%E6%A0%87%E7%AD%BE"><span class="nav-number">2.3.16.</span> <span class="nav-text">16、修改文章底部tag标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17%E3%80%81%E8%AE%BE%E7%BD%AE%E5%A4%B4%E5%83%8F"><span class="nav-number">2.3.17.</span> <span class="nav-text">17、设置头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18%E3%80%81%E7%BD%91%E7%AB%99%E5%BA%95%E9%83%A8%E5%8A%A0%E4%B8%8A%E8%AE%BF%E9%97%AE%E9%87%8F"><span class="nav-number">2.3.18.</span> <span class="nav-text">18、网站底部加上访问量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19%E3%80%81%E9%A1%B6%E9%83%A8%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6%E6%9D%A1"><span class="nav-number">2.3.19.</span> <span class="nav-text">19、顶部阅读进度条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20%E3%80%81%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87"><span class="nav-number">2.3.20.</span> <span class="nav-text">20、设置网站图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21%E3%80%81%E4%BE%A7%E8%BE%B9%E6%A0%8F%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">2.3.21.</span> <span class="nav-text">21、侧边栏社交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22%E3%80%81%E9%98%85%E8%AF%BB%E5%85%A8%E6%96%87%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F"><span class="nav-number">2.3.22.</span> <span class="nav-text">22、阅读全文按钮样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23%E3%80%81%E6%9B%B4%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E6%A8%A1%E6%9D%BF"><span class="nav-number">2.3.23.</span> <span class="nav-text">23、更改新建文章的模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24%E3%80%81%E8%AE%BE%E5%AE%9A%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.3.24.</span> <span class="nav-text">24、设定代码高亮格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25%E3%80%81%E4%BB%A3%E7%A0%81%E5%9D%97%E5%A4%8D%E5%88%B6%E9%80%89%E9%A1%B9"><span class="nav-number">2.3.25.</span> <span class="nav-text">25、代码块复制选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26%E3%80%81%E6%B7%BB%E5%8A%A0%E8%90%8C%E8%90%8C%E5%93%92Live2D%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.3.26.</span> <span class="nav-text">26、添加萌萌哒Live2D模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#27%E3%80%81%E5%BC%80%E5%90%AFValine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.3.27.</span> <span class="nav-text">27、开启Valine评论系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#28%E3%80%81%E6%B7%BB%E5%8A%A0%E5%AF%B9%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">2.3.28.</span> <span class="nav-text">28、添加对表情符号的支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#29%E3%80%81%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">2.3.29.</span> <span class="nav-text">29、文章资源文件夹</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83"><span class="nav-number">1.</span> <span class="nav-text">第一部分 搭建与发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83"><span class="nav-number">1.1.</span> <span class="nav-text">项目环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo搭建步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%AE%89%E8%A3%85Git"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%AE%89%E8%A3%85VSCode"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、安装VSCode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">1.2.4.</span> <span class="nav-text">4、安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E6%B3%A8%E5%86%8CGithub%E8%B4%A6%E5%8F%B7%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93"><span class="nav-number">1.2.5.</span> <span class="nav-text">5、注册Github账号创建个人仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E7%94%9F%E6%88%90ssh%E5%AF%86%E9%92%A5%E6%B7%BB%E5%8A%A0%E5%88%B0Github"><span class="nav-number">1.2.6.</span> <span class="nav-text">6、生成ssh密钥添加到Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E3%80%81%E4%BF%AE%E6%94%B9Hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.7.</span> <span class="nav-text">7、修改Hexo配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8%E3%80%81Hexo%E9%A1%B9%E7%9B%AE%E6%98%A0%E5%B0%84%E5%88%B0Github%E4%BB%93%E5%BA%93"><span class="nav-number">1.2.8.</span> <span class="nav-text">8、Hexo项目映射到Github仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9%E3%80%81Markdown%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.9.</span> <span class="nav-text">9、Markdown学习与工具</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E7%BE%8E%E5%8C%96"><span class="nav-number">2.</span> <span class="nav-text">第二部分 Next主题配置美化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE"><span class="nav-number">2.1.</span> <span class="nav-text">主题简单配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo相关介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81Hexo%E7%9B%AE%E5%BD%95%E6%9E%84%E6%88%90"><span class="nav-number">2.2.1.</span> <span class="nav-text">1、Hexo目录构成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">2.2.2.</span> <span class="nav-text">2、更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81Next%E7%9B%AE%E5%BD%95%E6%9E%84%E6%88%90"><span class="nav-number">2.2.3.</span> <span class="nav-text">3、Next目录构成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E7%BE%8E%E5%8C%96"><span class="nav-number">2.3.</span> <span class="nav-text">主题配置美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E8%AE%BE%E7%BD%AE%E5%8D%9A%E4%B8%BB%E6%96%87%E5%AD%97%E6%8F%8F%E8%BF%B0%E5%92%8C%E4%B8%AD%E6%96%87%E8%AF%AD%E8%A8%80"><span class="nav-number">2.3.1.</span> <span class="nav-text">1、设置博主文字描述和中文语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E8%AE%BE%E7%BD%AENext%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F"><span class="nav-number">2.3.2.</span> <span class="nav-text">2、设置Next主题样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8C%81%E4%B9%85%E5%8C%96%E9%93%BE%E6%8E%A5"><span class="nav-number">2.3.3.</span> <span class="nav-text">3、设置博客文章持久化链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81Menu%E6%B7%BB%E5%8A%A0%E5%85%B3%E4%BA%8E%E3%80%81%E6%A0%87%E7%AD%BE%E3%80%81%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2"><span class="nav-number">2.3.4.</span> <span class="nav-text">4、Menu添加关于、标签、分类页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">2.3.5.</span> <span class="nav-text">5、添加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E5%AF%B9%E4%BA%8E%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89"><span class="nav-number">2.3.6.</span> <span class="nav-text">6、对于网站样式的自定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E3%80%81%E8%AE%BE%E7%BD%AE%E4%BE%A7%E6%A0%8F%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6%E7%99%BE%E5%88%86%E6%AF%94"><span class="nav-number">2.3.7.</span> <span class="nav-text">7、设置侧栏阅读进度百分比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8%E3%80%81%E8%AE%BE%E7%BD%AE%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%A2%84%E8%AE%A1%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4"><span class="nav-number">2.3.8.</span> <span class="nav-text">8、设置字数统计和预计阅读时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9%E3%80%81%E7%BD%91%E7%AB%99%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4"><span class="nav-number">2.3.9.</span> <span class="nav-text">9、网站底部添加网站运行时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10%E3%80%81%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2"><span class="nav-number">2.3.10.</span> <span class="nav-text">10、添加自定义404页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11%E3%80%81%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD"><span class="nav-number">2.3.11.</span> <span class="nav-text">11、添加图片放大预览功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12%E3%80%81%E9%9A%90%E8%97%8F%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8-powered-By-Hexo-x2F-%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8"><span class="nav-number">2.3.12.</span> <span class="nav-text">12、隐藏网页底部 powered By Hexo &#x2F; 强力驱动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13%E3%80%81%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%81%E6%A1%83%E5%BF%83"><span class="nav-number">2.3.13.</span> <span class="nav-text">13、网页底部添加动态桃心</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14%E3%80%81%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.3.14.</span> <span class="nav-text">14、图片懒加载设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15%E3%80%81%E8%AE%BE%E7%BD%AE%E6%A0%87%E9%A2%98%E6%A0%8F%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">2.3.15.</span> <span class="nav-text">15、设置标题栏背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16%E3%80%81%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8tag%E6%A0%87%E7%AD%BE"><span class="nav-number">2.3.16.</span> <span class="nav-text">16、修改文章底部tag标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17%E3%80%81%E8%AE%BE%E7%BD%AE%E5%A4%B4%E5%83%8F"><span class="nav-number">2.3.17.</span> <span class="nav-text">17、设置头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18%E3%80%81%E7%BD%91%E7%AB%99%E5%BA%95%E9%83%A8%E5%8A%A0%E4%B8%8A%E8%AE%BF%E9%97%AE%E9%87%8F"><span class="nav-number">2.3.18.</span> <span class="nav-text">18、网站底部加上访问量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19%E3%80%81%E9%A1%B6%E9%83%A8%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6%E6%9D%A1"><span class="nav-number">2.3.19.</span> <span class="nav-text">19、顶部阅读进度条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20%E3%80%81%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87"><span class="nav-number">2.3.20.</span> <span class="nav-text">20、设置网站图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21%E3%80%81%E4%BE%A7%E8%BE%B9%E6%A0%8F%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">2.3.21.</span> <span class="nav-text">21、侧边栏社交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22%E3%80%81%E9%98%85%E8%AF%BB%E5%85%A8%E6%96%87%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F"><span class="nav-number">2.3.22.</span> <span class="nav-text">22、阅读全文按钮样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23%E3%80%81%E6%9B%B4%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E6%A8%A1%E6%9D%BF"><span class="nav-number">2.3.23.</span> <span class="nav-text">23、更改新建文章的模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24%E3%80%81%E8%AE%BE%E5%AE%9A%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.3.24.</span> <span class="nav-text">24、设定代码高亮格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25%E3%80%81%E4%BB%A3%E7%A0%81%E5%9D%97%E5%A4%8D%E5%88%B6%E9%80%89%E9%A1%B9"><span class="nav-number">2.3.25.</span> <span class="nav-text">25、代码块复制选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26%E3%80%81%E6%B7%BB%E5%8A%A0%E8%90%8C%E8%90%8C%E5%93%92Live2D%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.3.26.</span> <span class="nav-text">26、添加萌萌哒Live2D模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#27%E3%80%81%E5%BC%80%E5%90%AFValine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.3.27.</span> <span class="nav-text">27、开启Valine评论系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#28%E3%80%81%E6%B7%BB%E5%8A%A0%E5%AF%B9%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">2.3.28.</span> <span class="nav-text">28、添加对表情符号的支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#29%E3%80%81%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">2.3.29.</span> <span class="nav-text">29、文章资源文件夹</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0"><span class="nav-number">3.</span> <span class="nav-text">第三部分 发布文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E6%9D%9F%E8%AF%AD"><span class="nav-number">4.</span> <span class="nav-text">结束语</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -164,9 +165,19 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -202,26 +213,70 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+  
 
-<h1 class="post-title" itemprop="name headline">搭建自己的个人博客网站(Github+Hexo+Next)
-</h1>
 
-<div class="post-meta-container">
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imjackjia.github.io/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jack Jia">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ImJackJia">
+      <meta itemprop="description" content="直到这一刻微笑着说话为止，我至少留下了一公升眼泪">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="搭建自己的个人博客网站(Github+Hexo+Next) | ImJackJia">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          搭建自己的个人博客网站(Github+Hexo+Next)
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-06-25 11:37:50 / 修改时间：13:25:06" itemprop="dateCreated datePublished" datetime="2022-06-25T11:37:50+08:00">2022-06-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+    </span>
+
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body">
-          <blockquote>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
 <p>Hexo博客支持很多主题风格，其中<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">Next</a>主题是<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Github&spm=1001.2101.3001.7020">Github</a>上Star最多的主题，其一直在更新维护，支持非常多的外部插件和功能选项。我目前使用的是Next6.0版本，下面我会介绍基于Next6主题的界面美化手法。</p>
 <p>在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。</p>
 </blockquote>
@@ -376,6 +431,13 @@
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">social:</span></span><br><span class="line"><span class="symbol">  GitHub:</span> https:<span class="comment">//github.com/yuumiy || fab fa-github</span></span><br><span class="line">  E-Mail: mailto:<span class="number">115274737</span>@qq.com || fa fa-envelope</span><br><span class="line"><span class="symbol">  CSDN:</span> https:<span class="comment">//blog.csdn.net/qq_44752641 || fab fa-telegram</span></span><br><span class="line"><span class="symbol">  RSS:</span> /atom.xml || fas fa-rss</span><br></pre></td></tr></table></figure>
 
 <h3 id="22、阅读全文按钮样式"><a href="#22、阅读全文按钮样式" class="headerlink" title="22、阅读全文按钮样式"></a>22、阅读全文按钮样式</h3><p>在博客需要显示摘要的地方加上 more标签，就不会显示全文。</p>
+<p>有的时候，主题模板配置的不够好的话，Hexo 最终生成的静态站点是不会自动生成文章摘要的。</p>
+<p>所以，为了保险起见，我们也自己手动设置文章摘要，这样也方便避免自动生成的摘要不优雅的情况。</p>
+<p>设置文章摘要，我们只需在想显示为摘要的内容之后添<code> &lt;!-- more --&gt;</code> 即可。像下面这样：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">hello</span> <span class="string">hexo</span> <span class="string">markdown</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2016-11-16 18:11:25</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="string">hello</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">markdown</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="string">我是文章摘要....</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">more</span> <span class="string">--&gt;</span></span><br><span class="line"><span class="string">我是正文内容...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这样，<code>&lt;!-- more --&gt;</code> 之前、文档配置参数之后中的内容便会被渲染为站点中的文章摘要。</p>
+<p>注意！文章摘要在文章详情页是正文中最前面的内容。</p>
 <h3 id="23、更改新建文章的模板"><a href="#23、更改新建文章的模板" class="headerlink" title="23、更改新建文章的模板"></a>23、更改新建文章的模板</h3><p>默认新建文章没有分类这个选项，需要自己填写，现在修改 hexo&#x2F;scaffolds&#x2F;post.md 文件 。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> &#123;&#123; <span class="string">title</span> &#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123; <span class="string">date</span> &#125;&#125;</span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
@@ -418,20 +480,51 @@
 <p>使用文本编辑器打开站点根目录下的 _ config.yml 文件，将 post_asset_folder 值设置为 true。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
-<p>上面的操作会开启 Hexo 的文章资源文件管理功能。Hexo 将会在我们每一次通过 hexo new <title> 命令创建新文章时自动创建一个同名文件夹，文件夹与md文件位于同一目录，于是我们便可以将文章所引用的相关资源放到这个同名文件夹下，然后通过相对路径引用。</p>
+<p>上面的操作会开启 Hexo 的文章资源文件管理功能。Hexo 将会在我们每一次通过<code>hexo new &lt;title&gt; </code>命令创建新文章时自动创建一个同名文件夹，文件夹与md文件位于同一目录，于是我们便可以将文章所引用的相关资源放到这个同名文件夹下，然后通过相对路径引用。</p>
 <p>比如我们把 1.jpg 放入 Hexo-2 文件夹中，通过markdown语法来进行引用图片<code>![](./Hexo-2/1.jpg)</code></p>
 <p>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。Hexo官方推荐使用标签插件来进行引用，这里之后需要再讲。</p>
+<h1 id="第三部分-发布文章"><a href="#第三部分-发布文章" class="headerlink" title="第三部分 发布文章"></a>第三部分 发布文章</h1><p>在站点终端分别执行清除缓存、生成静态文件、启动服务器命令：</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo <span class="keyword">generate</span></span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>打开 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 查看效果</p>
+<img data-src="搭建自己的个人博客网站-Github-Hexo-Next/post_article.png" alt="post_article" style="zoom:80%;" />
+
+
+
 <h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>花了大概3个小时，终于把这篇『搭建自己的个人博客网站』完成。这篇文章是我第一篇真正意义上的博客，首先是用心去写，花了大量时间去思考内容和排版；其次，希望自己能保持写博客的好习惯，从今天起，能保持每个月4篇高质量博客的输出，毕竟好记性不如烂笔头，多去总结多去思考。<br>​</p>
 <p><strong>最后以维克托·雨果的话作为结束：</strong><br><strong>人的智慧掌握着三把钥匙，一把开启数字，一把开启字母，一把开启音符。知识、想象、幻想就在其中。</strong></p>
 
-      </div>
-      
-      
-      
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/06/24/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 </div>
