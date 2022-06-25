@@ -18,4 +18,26 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>搭建自己的个人博客网站(Github+Hexo+Next)</title>
+    <url>/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/</url>
+    <content><![CDATA[<blockquote>
+<p>从大二开始就一直很想有一个属于自己的博客网站，可一拖再拖，直到最近才下了决心去搭建一个网站。在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。</p>
+</blockquote>
+<h1 id="第一部分-搭建与发布"><a href="#第一部分-搭建与发布" class="headerlink" title="第一部分 搭建与发布"></a>第一部分 搭建与发布</h1><h2 id="项目环境"><a href="#项目环境" class="headerlink" title="项目环境"></a>项目环境</h2><ul>
+<li>windows10</li>
+<li>Github</li>
+<li>Visual Studio Code</li>
+<li>Hexo 5.4.0 + Next 7.8.0</li>
+<li>Git 2.32.0</li>
+<li>Node.js 14.17.4</li>
+</ul>
+<h2 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h2><h3 id="1、安装Git"><a href="#1、安装Git" class="headerlink" title="1、安装Git"></a>1、安装Git</h3><pre><code>Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。
+可以到Git官网进行下载，Git详细安装教程可以查看Git安装。
+</code></pre>
+<h3 id="2、安装VSCode"><a href="#2、安装VSCode" class="headerlink" title="2、安装VSCode"></a>2、安装VSCode</h3><pre><code>VSCode 全称 Visual Studio Code，是微软出的一款轻量级代码编辑器，免费、开源而且功能强大，一般为前端代码开发IDE。
+可以到VSCode官网进行下载，VSCode详细安装教程可以查看VSCode安装。
+</code></pre>
+]]></content>
+  </entry>
 </search>
