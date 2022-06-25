@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2022/06/24/hello-world/</url>
+    <url>/posts/16107.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -20,7 +20,7 @@
   </entry>
   <entry>
     <title>搭建自己的个人博客网站(Github+Hexo+Next)</title>
-    <url>/2022/06/25/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-Github-Hexo-Next/</url>
+    <url>/posts/10121.html</url>
     <content><![CDATA[<blockquote>
 <p>从大二开始就一直很想有一个属于自己的博客网站，可一拖再拖，直到最近才下了决心去搭建一个网站。在网上了解到基于Hexo的博客搭建比较简单并且美观，在查阅了许多教程，走过无数坑后，写下了这篇文章。本文主要讲解个人博客网站的搭建，内容比较详细，适合小白食用。</p>
 </blockquote>
@@ -81,6 +81,18 @@
 <h2 id="主题配置美化"><a href="#主题配置美化" class="headerlink" title="主题配置美化"></a>主题配置美化</h2><blockquote>
 <p>网上Next主题的配置大多为next5.+或next6.+，在Next 7.8.0中对之前的版本进行了高度的插件化，许多功能都集成在主题配置文件中，同时之前自定义样式配置文件的路径也有所改变，针对于此写下自己的配置记录。</p>
 </blockquote>
+<h3 id="1、设置博主文字描述和中文语言"><a href="#1、设置博主文字描述和中文语言" class="headerlink" title="1、设置博主文字描述和中文语言"></a>1、设置博主文字描述和中文语言</h3><p>站点配置文件修改Site：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: 岛田悠米</span><br><span class="line">subtitle: <span class="string">&#x27;心中有梦 不负韶华&#x27;</span></span><br><span class="line">description: <span class="string">&#x27;coding就是生产力&#x27;</span></span><br><span class="line">keywords:</span><br><span class="line">author: Yuumiy</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: <span class="string">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2、设置Next主题样式"><a href="#2、设置Next主题样式" class="headerlink" title="2、设置Next主题样式"></a>2、设置Next主题样式</h3><p>Next提供了四种主题样式，根据个人的喜好选择即可。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、设置博客文章持久化链接"><a href="#3、设置博客文章持久化链接" class="headerlink" title="3、设置博客文章持久化链接"></a>3、设置博客文章持久化链接</h3><p>发布博客后，它的默认url地址是带中文的，并且进行了多层分级，非常复杂，因此需要安装这个插件简化url。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<p>站点配置文件修改permalink添加如下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">url: https://yuumiy.github.io/</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc16</span><br><span class="line">    rep: hex</span><br></pre></td></tr></table></figure>
+
 ]]></content>
   </entry>
 </search>
