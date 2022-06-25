@@ -17,8 +17,9 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"imjackjia.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"imjackjia.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="直到这一刻微笑着说话为止，我至少留下了一公升眼泪">
 <meta property="og:type" content="website">
@@ -188,6 +189,7 @@
     </header>
 
     
+  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -234,7 +236,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-06-25 11:37:50 / 修改时间：11:59:22" itemprop="dateCreated datePublished" datetime="2022-06-25T11:37:50+08:00">2022-06-25</time>
+      <time title="创建时间：2022-06-25 11:37:50 / 修改时间：12:27:44" itemprop="dateCreated datePublished" datetime="2022-06-25T11:37:50+08:00">2022-06-25</time>
     </span>
 
   
@@ -318,6 +320,73 @@
 
 <p>站点配置文件修改permalink添加如下内容：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">url: https://yuumiy.github.io/</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc16</span><br><span class="line">    rep: hex</span><br></pre></td></tr></table></figure>
+
+<p>测试结果：未配置</p>
+<h3 id="4、Menu添加关于、标签、分类页面"><a href="#4、Menu添加关于、标签、分类页面" class="headerlink" title="4、Menu添加关于、标签、分类页面"></a>4、Menu添加关于、标签、分类页面</h3><p>站点配置文件修改menu，将about、tags、categories前的#号去掉，示例如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br></pre></td></tr></table></figure>
+
+<p>新建相关页面</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line">hexo new page &quot;tags&quot;</span><br><span class="line">hexo new page &quot;categories&quot;</span><br></pre></td></tr></table></figure>
+
+<p>修改生成页面的配置<br>source&#x2F;about&#x2F;index.md<br>source&#x2F;tags&#x2F;index.md<br>source&#x2F;categories&#x2F;index.md</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于</span><br><span class="line">type: &quot;about&quot;</span><br><span class="line">---</span><br><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、添加搜索功能"><a href="#5、添加搜索功能" class="headerlink" title="5、添加搜索功能"></a>5、添加搜索功能</h3><p>安装exo-generator-searchdb这个插件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>站点配置文件添加</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Search</span><br><span class="line">search:</span><br><span class="line">	path: search.xml</span><br><span class="line">	field: post</span><br><span class="line">	format: html</span><br><span class="line">	limit: 10000</span><br></pre></td></tr></table></figure>
+
+<h3 id="6、对于网站样式的自定义"><a href="#6、对于网站样式的自定义" class="headerlink" title="6、对于网站样式的自定义"></a>6、对于网站样式的自定义</h3><p>在博客根目录下的source文件夹下新建_data文件夹并添加styles.styl文件，就可以对网站样式进行自定义<br>以我的个人博客为例，我做了如下自定义样式：修改链接样式、去掉顶部黑线、修改选中字符的颜色、修改代码块选中的颜色、修改引用样式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">// 修改链接样式</span><br><span class="line">.post-body p a&#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #ff106c;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a, span.exturl &#123;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #ff106c;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  //去掉顶部黑线：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br><span class="line"></span><br><span class="line">// 修改选中字符的颜色</span><br><span class="line">/* webkit, opera, IE9 */</span><br><span class="line">::selection &#123; </span><br><span class="line">    background: #00c4b6;</span><br><span class="line">    color: #f7f7f7; </span><br><span class="line">&#125;</span><br><span class="line">/* firefox */</span><br><span class="line">::-moz-selection &#123; </span><br><span class="line">    background: #00c4b6;</span><br><span class="line">    color: #f7f7f7;    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 代码块选中颜色</span><br><span class="line">.highlight *::selection &#123;</span><br><span class="line">    background: #00c4b6;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//修改引用样式</span><br><span class="line">blockquote &#123;</span><br><span class="line">    border-left: 4px solid #f27c8d;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="7、设置侧栏阅读进度百分比"><a href="#7、设置侧栏阅读进度百分比" class="headerlink" title="7、设置侧栏阅读进度百分比"></a>7、设置侧栏阅读进度百分比</h3><p>编辑主题配置文件，修改 back2top 部分如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  enable: true</span><br><span class="line">  sidebar: true</span><br><span class="line">  scrollpercent: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="8、设置字数统计和预计阅读时间"><a href="#8、设置字数统计和预计阅读时间" class="headerlink" title="8、设置字数统计和预计阅读时间"></a>8、设置字数统计和预计阅读时间</h3><p>在博客根目录下安装插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
+
+<p>编辑主题配置文件，添加如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#文章、站点字数统计</span><br><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true                # 文章字数统计</span><br><span class="line">  time: true                   # 文章阅读时长</span><br><span class="line">  total_symbols: true          # 站点总字数统计</span><br><span class="line">  total_time: true             # 站点总阅读时长</span><br><span class="line">  exclude_codeblock: false     # 排除代码字数统计</span><br></pre></td></tr></table></figure>
+
+<p>测试结果：未配置</p>
+<h3 id="9、网站底部添加网站运行时间"><a href="#9、网站底部添加网站运行时间" class="headerlink" title="9、网站底部添加网站运行时间"></a>9、网站底部添加网站运行时间</h3><p>修改主题下layout&#x2F;_partials&#x2F;footer.swig，在{ {- next_inject(‘footer’) } }上方添加如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 网站运行时间的设置 --&gt;</span><br><span class="line">&lt;span id=&quot;timeDate&quot;&gt;载入天数...&lt;/span&gt;</span><br><span class="line">&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/span&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var now = new Date();</span><br><span class="line">    function createtime() &#123;</span><br><span class="line">        var grt= new Date(&quot;08/10/2021 12:00:00&quot;);//此处修改你的建站时间或者网站上线时间</span><br><span class="line">        now.setTime(now.getTime()+250);</span><br><span class="line">        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);</span><br><span class="line">        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);</span><br><span class="line">        if(String(hnum).length ==1 )&#123;hnum = &quot;0&quot; + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);</span><br><span class="line">        mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = &quot;0&quot; + mnum;&#125;</span><br><span class="line">        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span><br><span class="line">        snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = &quot;0&quot; + snum;&#125;</span><br><span class="line">        document.getElementById(&quot;timeDate&quot;).innerHTML = &quot;本站已安全运行 &quot;+dnum+&quot; 天 &quot;;</span><br><span class="line">        document.getElementById(&quot;times&quot;).innerHTML = hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    setInterval(&quot;createtime()&quot;,250);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="10、添加自定义404页面"><a href="#10、添加自定义404页面" class="headerlink" title="10、添加自定义404页面"></a>10、添加自定义404页面</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 404</span><br></pre></td></tr></table></figure>
+
+<p>编辑新建的页面文件，默认在站点根目录下 &#x2F;source&#x2F;404&#x2F;index.md</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 404</span><br><span class="line">comments: false</span><br><span class="line">permalink: /404</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;center&gt;对不起，您所访问的页面不存在或者已删除&lt;/center&gt;</span><br><span class="line"></span><br><span class="line">* [click here](https://yuumiy.github.io/) 返回首页</span><br><span class="line">* 我的Github：[https://github.com/yuumiy](https://github.com/yuumiy)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="11、添加图片放大预览功能"><a href="#11、添加图片放大预览功能" class="headerlink" title="11、添加图片放大预览功能"></a>11、添加图片放大预览功能</h3><p>在主题配置文件，启用 fancybox，修改配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fancybox: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="12、隐藏网页底部-powered-By-Hexo-x2F-强力驱动"><a href="#12、隐藏网页底部-powered-By-Hexo-x2F-强力驱动" class="headerlink" title="12、隐藏网页底部 powered By Hexo &#x2F; 强力驱动"></a>12、隐藏网页底部 powered By Hexo &#x2F; 强力驱动</h3><p>修改主题配置文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powered: false</span><br></pre></td></tr></table></figure>
+
+<h3 id="13、网页底部添加动态桃心"><a href="#13、网页底部添加动态桃心" class="headerlink" title="13、网页底部添加动态桃心"></a>13、网页底部添加动态桃心</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">icon:</span><br><span class="line">    animated: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="14、图片懒加载设置"><a href="#14、图片懒加载设置" class="headerlink" title="14、图片懒加载设置"></a>14、图片懒加载设置</h3><p>在主题配置文件中启用lazyload</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lazyload: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="15、设置标题栏背景图片"><a href="#15、设置标题栏背景图片" class="headerlink" title="15、设置标题栏背景图片"></a>15、设置标题栏背景图片</h3><p>博客根目录下的source&#x2F;_data&#x2F;styles.styl文件，添加如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 标题栏背景图片</span><br><span class="line">.site-brand-container &#123; </span><br><span class="line">  background-image: url(/images/bg.png);</span><br><span class="line">  background-size: 100% 100%;</span><br><span class="line">  opacity: 0.9;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;images&#x2F;bg.png指的是根目录下public&#x2F;images&#x2F;下的图片</p>
+<h3 id="16、修改文章底部tag标签"><a href="#16、修改文章底部tag标签" class="headerlink" title="16、修改文章底部tag标签"></a>16、修改文章底部tag标签</h3><p>把文章底部#标签改为图标，在主题配置文件中修改：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tag_icon: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="17、设置头像"><a href="#17、设置头像" class="headerlink" title="17、设置头像"></a>17、设置头像</h3><p>在主题配置文件中修改avatar</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: /images/avatar.png</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: true</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;images&#x2F;avatar.png指的是根目录下public&#x2F;images&#x2F;下的图片</p>
+<h3 id="18、网站底部加上访问量"><a href="#18、网站底部加上访问量" class="headerlink" title="18、网站底部加上访问量"></a>18、网站底部加上访问量</h3><p>修改主题下layout&#x2F;_partials&#x2F;footer.swig，在{ {- next_inject(‘footer’) } }上方添加如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;span&gt;&lt;br&gt;&lt;/span&gt;	</span><br><span class="line"></span><br><span class="line">&lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">      &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/span&gt;</span><br><span class="line">&lt;span&gt;总访客&amp;nbsp&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;&amp;nbsp人&lt;/span&gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">      &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;总访问量&amp;nbsp&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;&amp;nbsp次&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="19、顶部阅读进度条"><a href="#19、顶部阅读进度条" class="headerlink" title="19、顶部阅读进度条"></a>19、顶部阅读进度条</h3><p>主题配置文件中修改 reading_progress 选项</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reading_progress:</span><br><span class="line">  enable: true</span><br><span class="line">  # 显示在顶部</span><br><span class="line">  position: top</span><br><span class="line">  color: &quot;#06d633&quot;</span><br><span class="line">  height: 3px</span><br></pre></td></tr></table></figure>
 
 
       
@@ -462,11 +531,27 @@
     setInterval("createtime()",250);
 </script>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span><br></span>	
+
+<span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+</span>
+<span>总访客&nbsp<span id="busuanzi_value_site_uv"></span>&nbsp人</span>
+    <span class="post-meta-divider">|</span>
+<span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+</span>
+    <span>总访问量&nbsp<span id="busuanzi_value_site_pv"></span>&nbsp次</span>
+
     </div>
   </footer>
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
@@ -475,6 +560,7 @@
 
 
 
+  <script src="/js/third-party/fancybox.js"></script>
 
 
   
