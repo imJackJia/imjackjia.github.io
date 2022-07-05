@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"imjunjie.gitee.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="目录   Python概述 Python解析器 PyCharm开发利器 Python注释 Python变量 Python中的Bug Python格式化输出 Python的input()输入方法  学习目标   了解Python及其应用领域 能说出Python各个版本及其区别 掌握Python解析器及其安装 熟练掌握PyCharm的安装及配置 了解Python注释的编写">
+    <meta name="description" content="目录   Python概述 Python解析器 PyCharm开发利器 Python注释 Python变量 Python中的Bug Python格式化输出 Python的input()输入方法  学习目标   了解Python及其应用领域 能说出Python各个版本及其区别 掌握Python解析器及其安装 熟练掌握PyCharm的安装及配置 了解Python注释的编写 掌握Python变量的定义以">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python基础">
 <meta property="og:url" content="https://imjunjie.gitee.io/2022/07/05/01-Python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/index.html">
 <meta property="og:site_name" content="ImJackJia">
-<meta property="og:description" content="目录   Python概述 Python解析器 PyCharm开发利器 Python注释 Python变量 Python中的Bug Python格式化输出 Python的input()输入方法  学习目标   了解Python及其应用领域 能说出Python各个版本及其区别 掌握Python解析器及其安装 熟练掌握PyCharm的安装及配置 了解Python注释的编写">
+<meta property="og:description" content="目录   Python概述 Python解析器 PyCharm开发利器 Python注释 Python变量 Python中的Bug Python格式化输出 Python的input()输入方法  学习目标   了解Python及其应用领域 能说出Python各个版本及其区别 掌握Python解析器及其安装 熟练掌握PyCharm的安装及配置 了解Python注释的编写 掌握Python变量的定义以">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://imjunjie.gitee.io/2022/07/05/01-Python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/img1_1_0.png">
 <meta property="og:image" content="https://imjunjie.gitee.io/2022/07/05/01-Python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/img1_1_1.png">
@@ -154,8 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87"><span class="nav-text">学习目标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-python%E6%A6%82%E8%BF%B0"><span class="nav-text">一、 Python概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%84%E6%BA%90"><span class="nav-text">1. 计算机资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%88%86%E7%B1%BB"><span class="nav-text">2. 操作系统分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E4%B9%A0python"><span class="nav-text">3. 为什么要学习Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python%E8%AF%AD%E8%A8%80%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="nav-text">4. Python语言的缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python%E8%AF%AD%E8%A8%80%E7%9A%84%E4%BB%8B%E7%BB%8D"><span class="nav-text">5. Python语言的介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python2.x%E5%92%8Cpython3.x%E7%89%88%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">6.
-Python2.x和Python3.x版本的区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8Cpython%E8%A7%A3%E6%9E%90%E5%99%A8"><span class="nav-text">二、Python解析器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#python%E8%A7%A3%E6%9E%90%E5%99%A8%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-text">1. Python解析器的作用</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">学习目标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">一、 Python概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%84%E6%BA%90"><span class="nav-text">1. 计算机资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%88%86%E7%B1%BB"><span class="nav-text">2. 操作系统分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E4%B9%A0Python"><span class="nav-text">3. 为什么要学习Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Python%E8%AF%AD%E8%A8%80%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="nav-text">4. Python语言的缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Python%E8%AF%AD%E8%A8%80%E7%9A%84%E4%BB%8B%E7%BB%8D"><span class="nav-text">5. Python语言的介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Python2-x%E5%92%8CPython3-x%E7%89%88%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">6. Python2.x和Python3.x版本的区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">–coding: utf-8 - - | 默认采用utf-8                                 |</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">二、Python解析器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Python%E8%A7%A3%E6%9E%90%E5%99%A8%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-text">1. Python解析器的作用</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -302,15 +301,21 @@ Python2.x和Python3.x版本的区别</span></a></li></ol></li><li class="nav-ite
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="目录">目录</h1>
+        <h1>目录</h1>
 <hr>
 <blockquote>
-<p>Python概述 Python解析器 PyCharm开发利器 Python注释 Python变量
-Python中的Bug Python格式化输出 Python的input()输入方法</p>
+<p>Python概述<br>
+Python解析器<br>
+PyCharm开发利器<br>
+Python注释<br>
+Python变量<br>
+Python中的Bug<br>
+Python格式化输出<br>
+Python的input()输入方法</p>
 </blockquote>
-<h1 id="学习目标">学习目标</h1>
+<h1>学习目标</h1>
 <blockquote>
-<ol type="1">
+<ol>
 <li>了解Python及其应用领域</li>
 <li>能说出Python各个版本及其区别</li>
 <li>掌握Python解析器及其安装</li>
@@ -321,8 +326,8 @@ Python中的Bug Python格式化输出 Python的input()输入方法</p>
 <li>掌握Python的input()输入方法</li>
 </ol>
 </blockquote>
-<h1 id="一-python概述">一、 Python概述</h1>
-<h2 id="计算机资源">1. 计算机资源</h2>
+<h1>一、 Python概述</h1>
+<h2 id="1-计算机资源">1. 计算机资源</h2>
 <p>在开发领域，计算机资源可以分为两部分：软件资源+硬件资源</p>
 <p>==软件资源：看得见，摸不着==</p>
 <p>==硬件资源：看得见，摸得着==</p>
@@ -330,84 +335,74 @@ Python中的Bug Python格式化输出 Python的input()输入方法</p>
 <p>软件资源（Office办公软件、网易云音乐、各种各样的计算机游戏）</p>
 <p>思考：我们发现，软硬件之间其实是可以交互的，这是什么原理呢？</p>
 <p>答：使用操作系统，==操作系统==是计算机软硬件之间的桥梁</p>
-<h2 id="操作系统分类">2. 操作系统分类</h2>
+<h2 id="2-操作系统分类">2. 操作系统分类</h2>
 <p>在日常的应用中，操作系统大概可以分为三大类：</p>
 <p>① Windows操作系统</p>
 <p>② MacOS操作系统</p>
 <p>③ Linux操作系统（属于服务器端使用量最大的操作系统）</p>
-<h2 id="为什么要学习python">3. 为什么要学习Python</h2>
+<h2 id="3-为什么要学习Python">3. 为什么要学习Python</h2>
 <p>① 技术趋势</p>
 <p>Python自带明星属性，热度稳居编程语言世界前三</p>
 <img data-src="/2022/07/05/01-Python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/img1_1_0.png" class title="img1_1_0">
 <p>② 简单易学</p>
 <p>开发代码少，精确表达需求逻辑；==33个关键字，7种基本数据类型==；语法规则简单，接近自然语</p>
 <img data-src="/2022/07/05/01-Python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/img1_1_1.png" class title="img1_1_1">
-<p>③ 应用广泛 Python语言涉及IT行业70%以上的技术领域</p>
+<p>③ 应用广泛<br>
+Python语言涉及IT行业70%以上的技术领域</p>
 <img data-src="/2022/07/05/01-Python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%8E%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/img1_1_2.png" class title="img1_1_2">
-<h2 id="python语言的缺点">4. Python语言的缺点</h2>
+<h2 id="4-Python语言的缺点">4. Python语言的缺点</h2>
 <p>① Python由于其语言特性，其运行速度相对于C/C++/Java要略慢一些</p>
 <p>② Python由于语言的特性，无法对代码进行加密</p>
 <p>③ Python的版本之间，兼容性不太理想（Python2.x和Python3.x）</p>
-<h2 id="python语言的介绍">5. Python语言的介绍</h2>
-<p>Python是一种跨平台的计算机程序设计语言。
-是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。最初被设计用于编写自动化脚本Shell（适用于Linux操作系统），随着版本的不断更新和语言新功能的添加，逐渐被用于独立的、大型项目的开发。</p>
+<h2 id="5-Python语言的介绍">5. Python语言的介绍</h2>
+<p>Python是一种跨平台的计算机程序设计语言。 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。最初被设计用于编写自动化脚本Shell（适用于Linux操作系统），随着版本的不断更新和语言新功能的添加，逐渐被用于独立的、大型项目的开发。</p>
 <p>其实目前很多知名的机器学习、人工智能以及深度学习框架也都是基于Python语言进行开发的：</p>
 <p>Google开源机器学习框架：TensorFlow</p>
 <p>开源社区主推学习框架：Scikit-learn</p>
 <p>百度开源深度学习框架：Paddle</p>
-<h2 id="python2.x和python3.x版本的区别">6.
-Python2.x和Python3.x版本的区别</h2>
+<h2 id="6-Python2-x和Python3-x版本的区别">6. Python2.x和Python3.x版本的区别</h2>
 <p>在目前的Python领域，其主要应用版本有两个：Python2和Python3</p>
 <table>
-<colgroup>
-<col style="width: 13%">
-<col style="width: 49%">
-<col style="width: 37%">
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>差异点</th>
 <th>Python2</th>
 <th>Python3</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>输出方式</td>
-<td>用print关键字，如print "hello"</td>
-<td>用print()函数，如print("hello")</td>
+<td>用print关键字，如print “hello”</td>
+<td>用print()函数，如print(“hello”)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>输入方式</td>
 <td>用raw_input()函数</td>
 <td>用input()函数</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>字符串编码格式</td>
 <td>默认采用ASCII</td>
 <td>默认使用Unicode</td>
 </tr>
-<tr class="even">
+<tr>
 <td>格式化字符串方式</td>
 <td>用%百分号，如”Hello, %s” % (“World”)</td>
 <td>用format()函数，如”Hello, {}”.format(“World”)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>源文件的编码格式</td>
 <td>默认采用 ASCII ，因此使用中文时要在源文件开头加上一行</td>
 <td></td>
 </tr>
-<tr class="even">
-<td># --coding: utf-8 - -</td>
-<td>默认采用utf-8</td>
-<td></td>
-</tr>
 </tbody>
 </table>
+<h1>–coding: utf-8 - - | 默认采用utf-8                                 |</h1>
 <p>主要区别可以理解为：==输入、输出以及编码格式的不同==</p>
 <p>在生产环境中，我们一般不会选择最新版本的Python，因为可能会存在未知Bug，所以一般强力建议大家在选择软件版本时，向前推1~2个版本。</p>
-<h1 id="二python解析器">二、Python解析器</h1>
-<h2 id="python解析器的作用">1. Python解析器的作用</h2>
+<h1>二、Python解析器</h1>
+<h2 id="1-Python解析器的作用">1. Python解析器的作用</h2>
 <p>Python解释器的作用：运行Python文件</p>
 <p>由于Python属于高级语言，其并不能直接在计算机中运行，</p>
 
